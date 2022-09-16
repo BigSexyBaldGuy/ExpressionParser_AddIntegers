@@ -6,7 +6,7 @@ import java.text.*;
 /**
  *  {@code Parse} is the class that breaks a string into tokens.
  *  @version 2022081600
- *  @author Richard Barton
+ *  @author David Simmons
  */
 public final class  Parse
 {
