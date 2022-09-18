@@ -5,6 +5,9 @@ import java.text.ParseException;
 // Todo: Should this class be final?
 public class Expression {
 
+    public Expression() {
+    }
+
     // Todo: public object MUST be in the javadoc
     public Expression(String expressionToParse) throws ParseException
     {
@@ -12,6 +15,14 @@ public class Expression {
         String[] tokenizedExpression = Parse.parse(expressionToParse);
 
        //Todo: return tokenizedExpression
+        Integer integer1 = new Integer("2");
+        Integer integer2 = new Integer("3");
+        Addition addition = new Addition(integer1,integer2);
+
+        System.out.println(addition.getValue());
+        System.out.println(addition.toString());
+
+
     }
 
     // Todo: change code so that it is NOT like his in Parse
